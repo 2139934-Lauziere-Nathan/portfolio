@@ -1,0 +1,168 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    font-size: 3em;
+}
+
+#haut_page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: steelblue;
+
+}
+
+#haut_page > header {
+    display: flex;
+    font-size: 30px;
+    color:white;
+    height: 80%;
+    width: 100%;
+    align-items: center;   
+    flex-direction: row;    
+    background-color: blue;
+}
+
+#haut_page > nav {
+    display:flex;
+    flex-direction:row;
+    color: white;
+    background-color: black;   
+    font-size: small;
+    gap: 50px;  
+    height: 20%;
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+.flex-child {
+    flex: 2fr 1fr;    
+}  
+
+#container2 {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+#image1 {
+    height: 30%;
+    width: 20%;
+    color: lightgray;
+    background-color: gray;
+}
+
+#image2 {
+    height: 30%;
+    width: 20%;
+    color: lightgray;
+    background-color: gray;
+}
+
+#container {
+    display: flex;
+    background-color: lightgray;
+    width: 20%;
+    height: 100%;   
+}
+
+#about_me {
+
+    font-size: 20px;
+}
+
+#photo_moi {
+    height: 30%;
+    width: 90%;
+    color: lightgray;
+    background-color: gray;
+}
+
+#about_me > p {
+    font-size: 20px;
+    flex: 0 1 auto;
+    flex-direction: column;
+}
+
+#contenu {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+#container3 {
+    display:flex;
+    font-size: 16px;
+    flex-direction: row;
+    background-color: rgb(114, 104, 104);
+    width: 100%;
+    height: 20px;
+}
+
+#container3 > div {
+    max-width: 300px;
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .list_lien, .flex-container, .container {  
+      display: flex;
+      flex-direction: column;
+      flex: 1fr;
+    }
+
+    #haut_page {
+       display:flex;
+       flex-direction:column;
+       color: white;
+       background-color: black;   
+       font-size: small;
+       gap: 50px;
+       height: 50%;
+       width: 100%;
+    }
+  
+    #haut_page > nav {
+        display:flex;
+        flex-flow: column wrap;
+        width: 100%;
+        height: 70%;
+        align-items: center;
+       color: white;
+       background-color: black;   
+       font-size: large;
+       gap: 50px;
+      
+      
+    }
+    #container {
+        display: flex;
+        background-color: lightgray;
+        width: 100%;
+        height: 100%;
+    }
+   
+    
+  }
+
+  @media print {
+    footer, nav, #haut_page{
+       display: none;
+    }
+}
